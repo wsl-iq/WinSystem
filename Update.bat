@@ -3,54 +3,42 @@ cd /d "%~dp0"
 
 echo Updating files...
 
-curl -O https://raw.githubusercontent.com/wsl-iq/Manager-Pc/main/LICENSE
-curl -O https://raw.githubusercontent.com/wsl-iq/Manager-Pc/main/ManagerPc.bat
-curl -O https://raw.githubusercontent.com/wsl-iq/Manager-Pc/main/README.md
-curl -O https://raw.githubusercontent.com/wsl-iq/Manager-Pc/main/desktop.ini
-curl -O https://raw.githubusercontent.com/wsl-iq/Manager-Pc/main/main.py
-curl -O https://raw.githubusercontent.com/wsl-iq/Manager-Pc/main/run.exe
-curl -O https://raw.githubusercontent.com/wsl-iq/Manager-Pc/main/setup.bat
-curl -O https://raw.githubusercontent.com/wsl-iq/Manager-Pc/main/uninstall.py
-curl -O https://raw.githubusercontent.com/wsl-iq/Manager-Pc/main/update.py
+curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/LICENSE
+curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/BootOptimization
+curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/README.md
+curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/CleanDisk.bat
+curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/CleanRam.bat
+curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/CleanRAM.bat
+curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/CloseBackRound.bat
+curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/SuperCPU.bat
+curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/WinSys.py
+curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/Uninstall.py
+curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/Update.py
 
 echo Finish Update Files 
 
 echo Updating directories...
 
-curl -L -o PackageMicroSoft.zip https://github.com/wsl-iq/Manager-Pc/archive/refs/heads/main/PackageMicroSoft.zip
-curl -L -o Banner.zip https://github.com/wsl-iq/Manager-Pc/archive/refs/heads/main/Banner.zip
-curl -L -o Application.zip https://github.com/wsl-iq/Manager-Pc/archive/refs/heads/main/Application.zip
-curl -L -o Project.zip https://github.com/wsl-iq/Manager-Pc/archive/refs/heads/main/Project.zip
-curl -L -o commanding.zip https://github.com/wsl-iq/Manager-Pc/archive/refs/heads/main/commanding.zip
-curl -L -o html.zip https://github.com/wsl-iq/Manager-Pc/archive/refs/heads/main/html.zip
-curl -L -o icon.zip https://github.com/wsl-iq/Manager-Pc/archive/refs/heads/main/icon.zip
-curl -L -o server.zip https://github.com/wsl-iq/Manager-Pc/archive/refs/heads/main/server.zip
+curl -L -o UnlockSpeed.zip https://github.com/wsl-iq/WinSystem/archive/refs/heads/main/UnlockSpeed.zip
+curl -L -o WinCPU.zip https://github.com/wsl-iq/WinSystem/archive/refs/heads/main/WinCPU.zip
+curl -L -o WinGPU.zip https://github.com/wsl-iq/WinSystem/archive/refs/heads/main/WinGPU.zip
 
 echo Finish Update Folders or directories
 
 echo Unzipping files...
 
-powershell -command "Expand-Archive -Force 'PackageMicroSoft.zip' '.'"
-powershell -command "Expand-Archive -Force 'Project.zip' '.'"
-powershell -command "Expand-Archive -Force 'Application.zip' '.'"
-powershell -command "Expand-Archive -Force 'Banner.zip' '.'"
-powershell -command "Expand-Archive -Force 'commanding.zip' '.'"
-powershell -command "Expand-Archive -Force 'html.zip' '.'"
-powershell -command "Expand-Archive -Force 'icon.zip' '.'"
-powershell -command "Expand-Archive -Force 'server.zip' '.'"
+powershell -command "Expand-Archive -Force 'UnlockSpeed.zip' '.'"
+powershell -command "Expand-Archive -Force 'WinCPU.zip' '.'"
+powershell -command "Expand-Archive -Force 'WinGPU.zip' '.'"
 
 echo Finish UnZip Folders
 
 echo Removing temporary files...
 
-del PackageMicroSoft.zip
-del commanding.zip
-del Application.zip
-del Project.zip
-del Banner.zip
-del html.zip
-del icon.zip
-del server.zip
+del UnlockSpeed.zip
+del WinCPU.zip
+del WinGPU.zip
+
 
 echo Cleaning temporary files...
 del /q /s /f "%temp%\*"
