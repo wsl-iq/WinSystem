@@ -18,7 +18,7 @@
   <tr>
     <td><img src="ICON\Intel.png" alt="Intel" width="64"></td>
     <td><img src="ICON\NVADIA.png" alt="NVADIA" width="64"></td>
-    <td><img src="ICON\AMD.png" alt="AMD" width="64"></td>
+    <td><img src="ICON\AMD.jpg" alt="AMD" width="64"></td>
   </tr>
 </table>
 
