@@ -16,11 +16,6 @@
 
 <table>
   <tr>
-    <td><img src="ICON\CPU.png" alt="CPU" width="64"></td>
-    <td><img src="ICON\GPU.png" alt="GPU" width="64"></td>
-    <td><img src="ICON\RAM.png" alt="RAM" width="64"></td>
-  </tr>
-  <tr>
     <td><img src="ICON\Intel.png" alt="Intel" width="64"></td>
     <td><img src="ICON\NVADIA.png" alt="NVADIA" width="64"></td>
     <td><img src="ICON\AMD.png" alt="AMD" width="64"></td>
