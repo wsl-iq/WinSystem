@@ -50,6 +50,15 @@ Enter = "\033[94;1m" + "[" + "\033[92;1m" + "+" + "\033[94;1m" + "]" + "\033[92;
 def WinSys():
     try:
         os.system('cls' if os.name == 'nt' else 'clear')
+        print(rf'''
+ {G}__      ___       {Y}___         
+ {G}\ \    / (_)_ _  {Y}/ __|_  _ ___
+  {G}\ \/\/ /| | ' \ {Y}\__ \ || (_-<
+   {G}\_/\_/ |_|_||_|{Y}|___/\_, /__/
+                       {Y}|__/ 
+        {R}Version {W}: {B}1
+        {M}Developer {W}: {C}Mohammed Al-Baqer    
+{W}''')
         print(f'{G}[1] {B}Boot Optimization{W}\n{G}[2] {B}Clean Hard Disk{W}\n{G}[3] {B}Clean or Clear Memory Ram{W}\n{G}[4] {B}Close App Background{W}')
         print(f'{G}[5] {B}Super CPU{W}\n{G}[6] {B}Processor optimization CPU{W}\n{G}[7] {B}Optimize Graphics GPU{W}\n{G}[8] {B}Overclocking{W}')
 
