@@ -60,7 +60,7 @@
 
 ---
 
-- ### **Uninstall.bat**
+- ### **Uninstall**
 
 `Click for button`
 - `python Uninstall.py`
