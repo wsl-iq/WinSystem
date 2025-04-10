@@ -73,8 +73,7 @@ def WinSys():
                 break
 
             elif choice == '3':
-                os.system('clearRam.bat')
-                os.system('ClearRam.bat')
+                os.system('CleanMemoryRAM.bat')
                 break
 
             elif choice == '4':
