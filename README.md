@@ -10,27 +10,23 @@
 - **Optimizing processors including** `Intel` **and** `AMD Ryzen`
 - **Optimizing graphics cards including** `Intel` **and** `Nvidia` **and** `AMD Ryzen`
 - **Closing background programs**
-
+- **Fix Bug Files System Windows**
+- **Can simple open BIOS From system**
 
 ---
 
 <table>
+  <tr>
+    <td><img src="ICON\CPU.png" alt="CPU" width="64"></td>
+    <td><img src="ICON\GPU.png" alt="GPU" width="64"></td>
+    <td><img src="ICON\RAM.png" alt="RAM" width="64"></td>
+  </tr>
   <tr>
     <td><img src="ICON\Intel.png" alt="Intel" width="64"></td>
     <td><img src="ICON\NVADIA.png" alt="NVADIA" width="64"></td>
     <td><img src="ICON\AMD.jpg" alt="AMD" width="64"></td>
   </tr>
 </table>
-
----
-- ### **INTERFACE**
-```
- __      ___       ___
- \ \    / (_)_ _  / __|_  _ ___
-  \ \/\/ /| | ' \ \__ \ || (_-<
-   \_/\_/ |_|_||_||___/\_, /__/
-                       |__/
-```
 
 ---
 
@@ -60,7 +56,7 @@
 
 ---
 
-- ### **Uninstall**
+- ### **Uninstall.bat**
 
 `Click for button`
 - `python Uninstall.py`
