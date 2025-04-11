@@ -34,6 +34,8 @@ import os, sys
 from WinCPU import SelCPU
 from WinGPU import SelGPU
 from UnlockSpeed import Run
+from BIOS import BIOS
+from FixBug import FixBug
 
 R = "\033[91;1m"  # Red
 G = "\033[92;1m"  # Green
@@ -60,7 +62,7 @@ def WinSys():
         {M}Developer {W}: {C}Mohammed Al-Baqer    
 {W}''')
         print(f'{G}[1] {B}Boot Optimization{W}\n{G}[2] {B}Clean Hard Disk{W}\n{G}[3] {B}Clean or Clear Memory Ram{W}\n{G}[4] {B}Close App Background{W}')
-        print(f'{G}[5] {B}Super CPU{W}\n{G}[6] {B}Processor optimization CPU{W}\n{G}[7] {B}Optimize Graphics GPU{W}\n{G}[8] {B}Overclocking{W}')
+        print(f'{G}[5] {B}Super CPU{W}\n{G}[6] {B}Processor optimization CPU{W}\n{G}[7] {B}Optimize Graphics GPU{W}\n{G}[8] {B}Overclocking{W}\n{G}[9] {B} Open BIOS{W}\n{G}[10] Fix Bug Files System{W}')
 
         while True:
             choice = input(f'\n{Enter} Enter choice option: {Y}')
@@ -74,6 +76,7 @@ def WinSys():
 
             elif choice == '3':
                 os.system('CleanMemoryRAM.bat')
+
                 break
 
             elif choice == '4':
@@ -95,6 +98,14 @@ def WinSys():
             elif choice == '8':
                 Run.main()
                 break
+
+            elif choice == '9':
+                BIOS.BIOS_Loading()
+                break
+
+            elif choice == '10':
+                 FixBug.FixBugSys()
+                 break
 
             else:
                 sys.exit(0)
