@@ -7,8 +7,7 @@ curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/LICENSE
 curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/BootOptimization
 curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/README.md
 curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/CleanDisk.bat
-curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/CleanRam.bat
-curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/CleanRAM.bat
+curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/CleanMemoryRAM.bat
 curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/CloseBackRound.bat
 curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/SuperCPU.bat
 curl -O https://raw.githubusercontent.com/wsl-iq/WinSystem/main/WinSys.py
@@ -22,6 +21,8 @@ echo Updating directories...
 curl -L -o UnlockSpeed.zip https://github.com/wsl-iq/WinSystem/archive/refs/heads/main/UnlockSpeed.zip
 curl -L -o WinCPU.zip https://github.com/wsl-iq/WinSystem/archive/refs/heads/main/WinCPU.zip
 curl -L -o WinGPU.zip https://github.com/wsl-iq/WinSystem/archive/refs/heads/main/WinGPU.zip
+curl -L -o WinGPU.zip https://github.com/wsl-iq/WinSystem/archive/refs/heads/main/FixBug.zip
+curl -L -o WinGPU.zip https://github.com/wsl-iq/WinSystem/archive/refs/heads/main/BIOS.zip
 
 echo Finish Update Folders or directories
 
@@ -30,6 +31,8 @@ echo Unzipping files...
 powershell -command "Expand-Archive -Force 'UnlockSpeed.zip' '.'"
 powershell -command "Expand-Archive -Force 'WinCPU.zip' '.'"
 powershell -command "Expand-Archive -Force 'WinGPU.zip' '.'"
+powershell -command "Expand-Archive -Force 'FixBug.zip' '.'"
+powershell -command "Expand-Archive -Force 'BIOS.zip' '.'"
 
 echo Finish UnZip Folders
 
@@ -38,6 +41,8 @@ echo Removing temporary files...
 del UnlockSpeed.zip
 del WinCPU.zip
 del WinGPU.zip
+del FixBug.zip
+del BIOS.zip
 
 
 echo Cleaning temporary files...
